@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Plus Jakarta Sans", sans-serif; 
+    background-color: hsl(202, 86%, 94%);
+}
+.container{
+ width: 800px;
+  margin:30px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+
+}
+.context{
+    width: 600px;
+    align-items: center;
+    padding:15px 15px;  
+    margin: auto;
+}
+.context .hero{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.hero h2{
+    font-size: 18px;
+}
+.clear-all{
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#error{
+    font-size: 10px;
+    color: red;
+    padding: 2px 5px ;
+}
+label{
+    color: hsl(200, 26%, 54%);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.mortgage-amount-wrapper{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+   
+}
+
+.input-wrapper{
+    width: 340px;
+    height: 36px;
+    display: flex;
+  background-color: hsl(203, 41%, 72%);
+   cursor: pointer;
+   border-radius: 5px;
+}
+.input-wrapper:focus{
+   
+}
+.input-wrapper span{
+height: 35px;
+width: 40px;
+padding: 8px;
+font-size: 15px;
+}
+
+.amountinp{
+    border-left: 0px solid ;
+    border: 1px solid  hsl(203, 41%, 72%);
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.amountinp:focus{
+    border: none;
+}
+.amountinp:focus {
+    outline: 1px solid hsl(61, 70%, 52%);;
+  }
+
+
+.mortgage-rates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mortgage-team-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.team-wrapper{
+    display: flex;
+    height: 35px;
+    border-radius: 5px;
+    width: 160px;
+    background-color: hsl(203, 41%, 72%);
+    margin-top: 5px;
+    border: 1px black;
+}
+.yearsinp{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid  hsl(203, 41%, 72%);
+    cursor: pointer;
+} 
+.yearsinp:focus{
+    outline:yellow;
+   
+}
+.team-wrapper span{
+    width: 50px;
+     font-size: 10px;
+     text-align: center;
+     padding: 10px;
+     color: hsl(202, 55%, 16%);
+     font-weight: 600;
+}
+
+.interest-rate-wrapper{
+    display: flex;
+    height: 35px;
+    border-radius: 5px;
+    width: 160px;
+    background-color: hsl(203, 41%, 72%);
+    margin-top: 5px;
+}
+
+.rateinp{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid  hsl(203, 41%, 72%);
+    cursor: pointer;
+}
+.interest-rate-wrapper span{
+    width: 50px;
+     font-size: 10px;
+     text-align: center;
+     padding: 10px;
+     color: hsl(202, 55%, 16%);
+     font-weight: 600;
+}
+
+.mortgage-type-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.repayment-wrapper{
+    width: 100%;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid hsl(203, 41%, 72%);
+}
+
+.repayment-wrapper .repayinp{
+    margin-right: 8px;
+    accent-color: hsl(61, 70%, 52%);
+    bottom: none;
+    cursor: pointer;
+    width: 20px;
+    height: 18px; 
+}
+.only-interest-wrapper{
+    width: 100%;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid hsl(203, 41%, 72%);
+}
+.only-interest{
+    margin-right: 8px;
+    accent-color: hsl(61, 70%, 52%);
+    bottom: none;
+    cursor: pointer;
+    width: 20px;
+    height: 18px; 
+}
+
+.btn-wrapper{
+margin: 10px 0px;
+}
+.submit-btn{
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    height: 35px;
+    width: 70%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.submit-btn img{
+    width: 18px;
+    margin-right:5px;
+}
+
+.result-display{
+    background-color: hsl(202, 55%, 16%);
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.empty-result{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 50px;
+ text-align: center;
+}
+.empty-result p{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 7px 0px;
+}
+.empty-result span{
+    font-size: 11px;
+    color: white;
+    font-weight: 100;
+}
+.hidden{
+    display: none;
+}
+.complete-result{
+    color: white;
+    padding: 15px 35px;
+}
+.complete-result h3{
+    margin-bottom: 15px;
+}
+.complete-result  .title{
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.minicard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-lime{
+    height: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color:  hsl(61, 70%, 52%);
+}
+.innercard{
+    padding: 10px 20px;
+}
+.innercard p{
+    font-size: 10px;
+    margin: 10px 0px;
+}
+.monthlypay{
+    color: hsl(61, 70%, 52%);
+    margin-bottom: 15px;
+}
+hr{
+    opacity: 0.3;
+    margin-bottom: 5px;
+}
+.totalpay{
+    margin: 10px 0px;
+}
+@media (max-width:800px) {
+    body{
+        font-family:"Plus Jakarta Sans", sans-serif; 
+        background-color: hsl(202, 86%, 94%);
+        width: 800px;
+        margin: auto;
+    }
+    .card{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .container{
+        width: 600px;
+         margin:30px auto;
+         background-color: white;
+         border-radius: 10px;
+       }
+       .mortgage-amount-wrapper{
+        display: flex;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+    .input-wrapper{
+        width: 100%;
+        height: 36px;
+        display: flex;
+      background-color: hsl(203, 41%, 72%);
+       cursor: pointer;
+       border-radius: 5px;
+    }
+    .team-wrapper{
+        display: flex;
+        height: 35px;
+        border-radius: 5px;
+        width: 280px;
+        background-color: hsl(203, 41%, 72%);
+        margin-top: 5px;
+        border: 1px black;
+    }
+    .interest-rate-wrapper{
+        display: flex;
+        height: 35px;
+        border-radius: 5px;
+        width: 280px;
+        background-color: hsl(203, 41%, 72%);
+        margin-top: 5px;
+    }
+    .submit-btn{
+        background-color: hsl(61, 70%, 52%);
+        border: none;
+        height: 35px;
+        width: 40%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 4px 15px;
+        border-radius: 20px;
+        font-weight: 700;
+    }
+    .result-display{
+        background-color: hsl(202, 55%, 16%);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .minicard{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: hsl(202, 55%, 16%);
+        border-radius: 5px;
+        width: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-lime{
+        height: 5px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color:  hsl(61, 70%, 52%);
+    }
+    .innercard{
+        padding: 20px 30px;
+    }
+    .monthlypay{
+        color: hsl(61, 70%, 52%);
+        margin-bottom: 15px;
+        font-size: 45px;
+    } 
+
+}
+@media (max-width:500px) {
+  body{
+     width: 375px;
+     margin: auto;
+  }       
+  .container{
+    width: 375px;
+     margin:30px auto;
+     background-color: white;
+     border-radius: 10px;
+   }
+   .context{
+    width: 600px;
+    align-items: center;
+    padding:15px 15px;  
+    margin: auto;
+}
+.context .hero{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.hero h2{
+    margin: 10px 0px;
+}
+.mortgage-amount-wrapper{
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+   
+}
+.input-wrapper{
+    width: 350px;
+    margin: 5px 0px;
+}
+.mortgage-rates{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+}
+.team-wrapper{
+    width: 350px;
+    margin: 5px 0px;
+}
+
+.interest-rate-wrapper{
+    width: 350px;
+    margin: 5px 0px;
+}
+.mortgage-type-wrapper{
+    width: 350px;
+}
+.submit-btn{
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    height: 35px;
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.minicard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-lime{
+    height: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color:  hsl(61, 70%, 52%);
+}
+.innercard{
+    padding: 20px 30px;
+}
+.monthlypay{
+    color: hsl(61, 70%, 52%);
+    margin-bottom: 15px;
+    font-size: 35px;
+} 
+
+
+}

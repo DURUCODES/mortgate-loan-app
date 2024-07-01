@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="app.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="context">
+        <div class="hero">
+          <h2>Mortgage Calculator</h2>
+          <a class="clear-all">Clear All</a>
+        </div>
+        <form>
+          <div class="mortgage-amount-wrapper">
+       <div class="filling">
+        <label> Mortgage Amount</label>
+        <div class="input-wrapper">
+          <span class="currency">&#163;</span>
+          <input class="amountinp">
+        </div>
+       </div>
+       <p class="amount-error" id="error"></p>
+          </div>
+
+
+          <div class="mortgage-rates">
+            <div class="mortgage-team-wrapper">
+              <div class="filling">
+                <label>  Mortgage Term</label>
+              <div class="team-wrapper">
+                <input class="yearsinp"><span>Years</span>
+              </div>
+              </div>
+              <p class="team-error"  id="error"></p>
+            </div>
+
+
+            <div class="mortgage-instrest-wrapper">
+              <div class="filling">
+                <label>Interest Rate</label>
+              <div class="interest-rate-wrapper">
+                <input class="rateinp"><span>%</span>
+              </div>
+              </div>
+              <p class="interest-error"  id="error"></p>
+            </div>
+
+          </div>
+          
+          <div class="mortgage-type-wrapper">
+            <label>Mortgage Type</label>
+            <div class="repayment-wrapper">
+              <input type="radio" class="repayinp">
+              <p> Repayment</p>
+            </div>
+
+            <div class="only-interest-wrapper">
+              <input type="radio" class="only-interest">
+              <p>Interest Only</p>
+            </div>
+
+            <p class="error-checkbox"  id="error"></p>
+          </div>
+          <div class="btn-wrapper">
+            <button class="submit-btn"><img src="./assets/images/icon-calculator.svg"> Calculate Repayments</button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="result-display">
+        <div class="empty-result active ">
+          <img src="./assets/images/illustration-empty.svg">
+          <p>Results shown here</p>
+          <span>Complete the form and click “calculate repayments” to see what 
+            your monthly repayments would be.</span>
+        </div>
+        <div class="complete-result  hidden">
+          <h3>Your results</h3>
+          <p class="title"> Your results are shown below based on the information you provided. 
+            To adjust the results, edit the form and click “calculate repayments” again.</p>
+            <div class="minicard">
+              <div class="top-lime"></div>
+             <div class="innercard">
+              <p class="youranswer">Your monthly repayments</p>
+              <h1 class="monthlypay"></h1>
+              <hr>
+              <p>  Total you'll repay over the term</p>
+              <h4 class="totalpay">333349949</h4>
+             </div>
+            </div>
+
+
+        </div>
+
+
+
+
+      
+
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">KINGSLEY DURUCHUKWU</a>.
+
+
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>
