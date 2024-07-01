@@ -397,6 +397,7 @@ hr{
      margin:30px auto;
      background-color: white;
      border-radius: 10px;
+      overflow: hidden
    }
    .context{
     width: 600px;
