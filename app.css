@@ -389,7 +389,7 @@ hr{
 @media (max-width:500px) {
   body{
      width: 375px;
-     margin: auto;
+     height:100vh
   }       
   .container{
     width: 375px;
