@@ -386,10 +386,11 @@ hr{
     } 
 
 }
-@media (max-width:500px) {
+@media (max-width:375px) {
   body{
      width: 375px;
      height:100vh
+      overflow:hidden;
   }       
   .container{
     width: 375px;
